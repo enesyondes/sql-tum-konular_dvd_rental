@@ -11,3 +11,7 @@ WHERE country like('_____');
 --sorgu4: city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
 SELECT COUNT(city) FROM city
 WHERE city ilike('%r');
+
+--sorgu5: film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'T%' AND rating = 'G';
